@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de CSS</title>
+</head>
+<style>
+   h1{
+        
+        background-color: darkblue;
+        color: lightgreen;
+    }
+
+    #por-id{
+        background-color: red;
+        color: white;
+    }
+
+    .seletores-mais-comum {
+        background-color: aquamarine;
+        color: black;
+
+    }
+
+    *{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>Seletor de CSS</h1>
+    <p id="texto-boas-vindas">Bem vindo!</p>
+    <p>No CSS nós possuímos os Seletores por ID</p>
+    <div>
+        <ul>
+            <li><strong>Seletor por Tipo:</strong> Busca elementos por uma tag HTML específica</li>
+            <li id="por-id"><strong>Seletor por ID(#):</strong> Busca elementos através do atributo "id"</li>  <!--NÃO pode ser repedito na pagina -->
+            <li class="seletores-mais-comum"><strong>Seletor por Classe(.):</strong> Busca por através do atributo "class"</li>  <!--Pode se repetir na pagina--> 
+            <li><strong>Seletor Universal(*):</strong>Seleciona todo os elementos do HTML</li>
+            <li><strong>Seletor de Atributo([atrib]):</strong>Seleciona elemetos que possuem um atributo específico em nosso documento HTML e conseguimos também buscar atributos com um valos específico</li>
+        </ul>
+    </div>    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> <!--SELETOR POR ATRIBUTO [], "|" ELE BUSCA COMPOSTOS COM "-",
+    (atrib*="xx") busca em qualquer lugar -->
+    <style>
+        [title]{
+            color: red;
+        }
+        [title="Netflix"]{
+            color: blue;
+        }
+        [href^="http://"]{
+            background-color: aquamarine;
+
+        }
+        [href$="login"]{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Netflix" href="http://www.netflix.com">
+                    Netflix
+                </a>
+            </li>
+            <li>
+                <a title="Prime" href="https://www.primevideos.com/login">
+                    Prime videos
+                </a>
+            </li>
+            <li>
+                <a title="Spotify" href="https://www.spotify.com/">
+                    Spotify
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Disney Plus
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
